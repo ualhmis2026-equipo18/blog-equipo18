@@ -10,16 +10,6 @@ Este blog ha sido creado como parte de la práctica de **HMIS 2026**, con el obj
 Somos el **Equipo 18** y estamos desarrollando un blog estático para documentar nuestro trabajo en la asignatura.  
 Durante esta práctica iremos publicando entradas sobre el progreso del proyecto, configuración del entorno, uso de Git y despliegue del sitio.
 
-## Últimas entradas 📝
-
-{% raw %}{% for post in site.posts limit:5 %}{% endraw %}
-### [{% raw %}{{ post.title }}{% endraw %}]({% raw %}{{ post.url | relative_url }}{% endraw %})
-**Fecha:** {% raw %}{{ post.date | date: "%d/%m/%Y" }}{% endraw %}  
-**Autor:** {% raw %}{{ post.author }}{% endraw %}
-
-{% raw %}{{ post.excerpt }}{% endraw %}
-{% raw %}{% endfor %}{% endraw %}
-
 ## Miembros del equipo 👥
 
 - [Página del equipo]({{ "/equipo/" | relative_url }})
