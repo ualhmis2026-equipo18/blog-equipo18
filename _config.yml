@@ -31,7 +31,11 @@ plugins:
   - jekyll-feed
 
 header_pages:
+ header_pages:
   - equipo.md
+  - julian.md
+  - diogo.md
+  - contacto.html
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

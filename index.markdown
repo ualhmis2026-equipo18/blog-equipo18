@@ -3,32 +3,37 @@ layout: home
 title: Blog Equipo 18
 ---
 
-Este blog ha sido creado como parte de la práctica de **HMIS 2026**, cuyo objetivo es aprender a trabajar de forma colaborativa utilizando herramientas modernas de desarrollo.
+Este blog ha sido creado como parte de la práctica de **HMIS 2026**, con el objetivo de aprender a trabajar de forma colaborativa utilizando **GitHub Flow**, **Jekyll** y herramientas modernas de desarrollo web.
 
-## Lo que hemos hecho hasta ahora
+## Sobre el proyecto 💻
 
-En esta primera fase del proyecto hemos realizado:
+Somos el **Equipo 18** y estamos desarrollando un blog estático para documentar nuestro trabajo en la asignatura.  
+Durante esta práctica iremos publicando entradas sobre el progreso del proyecto, configuración del entorno, uso de Git y despliegue del sitio.
 
-- Creación de una **organización en GitHub** para el equipo.
-- Creación del **repositorio del blog del equipo**.
-- Configuración del modelo de trabajo **GitHub Flow**.
-- Protección de la rama **main** para evitar commits directos.
-- Creación del **blog estático utilizando Jekyll**.
+## Últimas entradas 📝
 
-## Próximos pasos de la práctica
+{% raw %}{% for post in site.posts limit:5 %}{% endraw %}
+### [{% raw %}{{ post.title }}{% endraw %}]({% raw %}{{ post.url | relative_url }}{% endraw %})
+**Fecha:** {% raw %}{{ post.date | date: "%d/%m/%Y" }}{% endraw %}  
+**Autor:** {% raw %}{{ post.author }}{% endraw %}
 
-Durante las siguientes fases iremos desarrollando el blog añadiendo:
+{% raw %}{{ post.excerpt }}{% endraw %}
+{% raw %}{% endfor %}{% endraw %}
 
-- Entradas donde documentaremos el progreso del proyecto.
-- Información sobre los **miembros del equipo**.
-- Nuevas páginas y contenido relacionado con la asignatura.
-- Publicación del blog utilizando **GitHub Pages**.
+## Miembros del equipo 👥
 
-## Sobre nosotros
+- [Página del equipo]({{ "/equipo/" | relative_url }})
+- [Perfil de Diogo]({{ "/diogo/" | relative_url }})
+- [Perfil de Julián]({{ "/julian/" | relative_url }})
 
-Somos el **Equipo 18** y este blog forma parte de una práctica de trabajo colaborativo utilizando:
+## Contacto 📩
 
+- [Ir al formulario de contacto]({{ "/contacto/" | relative_url }})
+
+## Herramientas utilizadas 🛠️
+
+- Git
 - GitHub
 - GitHub Flow
 - Jekyll
-- GitHub Pages
+- Visual Studio Code
